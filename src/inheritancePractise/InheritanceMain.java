@@ -1,5 +1,8 @@
 /*
 * Inheritance is a concept that we can produce subclasses(lowclass) from a base class(upperclass).
+ ***********************************************************
+ * WE MUST CREATE AN OBJECT TO USE INHERITED CLASS METHODS *
+ ***********************************************************
 * we can inherit field(variables) and methods from the base class.
 * If we want to modify one inherited class in the sub-class we need to specificy @Override before change the method
 * Each sub-class can have specific other methods than base class
