@@ -79,7 +79,6 @@ public class Humans {
         this.favoriteActivities = favoriteActivities;
     }
     public void setFavoriteActivities(String activity) {
-
         this.favoriteActivities = addActivity(activity);;
     }
 
@@ -97,10 +96,10 @@ public class Humans {
 
     public void printInfo(){
         System.out.println("The person info:\n" +
-                "Name: " + getName() + "\t" +
-                "Age: " + getAge() + "\t" +
-                "HairColor: " + getHairColor() + "\t" +
-                "Ethnicity: " + getEthnicity()+ "\t" +
-                "Favorite Activities: " + getFavoriteActivities());
+                "Name: " + this.name + "\t" +
+                "Age: " + this.age + "\t" +
+                "HairColor: " + this.hairColor + "\t" +
+                "Ethnicity: " + this.ethnicity + "\t" +
+                "Favorite Activities: " + this.favoriteActivities);
     }
 }

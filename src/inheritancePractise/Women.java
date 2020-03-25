@@ -1,6 +1,7 @@
 package inheritancePractise;
 
 public class Women extends Humans {
+
     public Women(){
         super();
     }

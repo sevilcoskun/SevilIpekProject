@@ -22,20 +22,27 @@ public class InheritanceMain {
 
         Women w1 = new Women();
         w1.printInfo();
+        System.out.println(w1.getName() + " and " + m1.getName() + " can marry? " + w1.canMarry(w1, m1));
 
         Humans h2 = new Humans("Charles", 35, "yellow", "British");
         h2.printInfo();
 
         Men m2 = new Men("Cem", 27, "brown", "Turkish");
         m2.setFavoriteActivities("play game");
-        m2.setFavoriteActivities("drinking alchol");
+        m2.setFavoriteActivities("drinking alcohol");
+        System.out.println("?? " + m2.getName() + " can be soldier? " + m2.isSoldier());
         m2.printInfo();
 
         Women w2 = new Women("Sevil", 28, "yellow", "Turkish");
-        System.out.println(w2.getName() + " can be mother? " + w2.canBeMother());
+        System.out.println("?? " + w2.getName() + " can be mother? " + w2.canBeMother());
 
-        Humans h3 = new Women();
+        Humans h3 = new Men("David", 27, "red", "Irish");
+        //why I cannot use Men functions???
+        //System.out.println(h3.isSoldier());
         h3.printInfo();
+
+        Humans h4 = new Women();
+        h4.printInfo();
 
     }
 }

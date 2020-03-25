@@ -13,12 +13,12 @@ public class Men extends Humans {
     }
 
     public boolean isSoldier(){
-        if(getAge() > 18){
-            System.out.println("You can go to military duty!");
+        if(this.getAge() > 18){
+            System.out.println(this.getName() + " can go to military duty!");
             return true;
         }
         else{
-            System.out.println("You need to wait until to be 18!");
+            System.out.println(this.getName() + " need to wait until to be 18!");
             return false;
         }
     }
@@ -26,11 +26,11 @@ public class Men extends Humans {
     @Override
     public void printInfo(){
         System.out.println("\nThe person(Man) info:\n" +
-                "Name: " + getName() + "\t" +
-                "Age: " + getAge() + "\t" +
-                "HairColor: " + getHairColor() + "\t" +
-                "Ethnicity: " + getEthnicity()+ "\t" +
-                "Favorite Activities: " + getFavoriteActivities());
+                "Name: " + this.getName() + "\t" +
+                "Age: " + this.getAge() + "\t" +
+                "HairColor: " + this.getHairColor() + "\t" +
+                "Ethnicity: " + this.getEthnicity()+ "\t" +
+                "Favorite Activities: " + this.getFavoriteActivities());
     }
 
 }
