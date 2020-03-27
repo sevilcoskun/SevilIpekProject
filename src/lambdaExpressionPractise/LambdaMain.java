@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
 * Lambda expression starts to be used after Java 8
 * It is an example of Functional Programming
@@ -15,10 +16,13 @@
 *           3. result process(reduce)
 * */
 
+=======
+>>>>>>> master
 package lambdaExpressionPractise;
 
 import com.sun.org.apache.xpath.internal.operations.Mult;
 
+<<<<<<< HEAD
 import java.util.Arrays;
 import java.util.List;
 
@@ -26,6 +30,11 @@ public class LambdaMain {
     public static void main(String args[]){
 
         //1 -Interface usage
+=======
+public class LambdaMain {
+    public static void main(String args[]){
+
+>>>>>>> master
         ICalculator iCalculator = () -> {
             Addition r1 = new Addition(5,3);
             System.out.print("Calculator worked in ");
@@ -46,6 +55,7 @@ public class LambdaMain {
 
         iCalculator.printResult();
 
+<<<<<<< HEAD
         // 2-Lambda expressions in iterative jobs
         //without parameter lambda function
         List<Integer> intseq = Arrays.asList(1,2,3,4,5);
@@ -68,5 +78,7 @@ public class LambdaMain {
 
 
 
+=======
+>>>>>>> master
     }
 }
