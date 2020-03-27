@@ -22,6 +22,7 @@ import com.sun.org.apache.xpath.internal.operations.Mult;
 import java.util.Arrays;
 import java.util.List;
 
+
 public class LambdaMain {
     public static void main(String args[]){
 
@@ -65,8 +66,5 @@ public class LambdaMain {
         List<Integer> l = Arrays.asList(1,2,3,4,5);
         int sum = l.stream().map(x -> x * x).reduce((x,y) -> x + y).get();
         System.out.println("Result: " + sum);
-
-
-
     }
 }
